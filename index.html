@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">My Portfolio</h1>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact-form">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="intro" class="intro fade-in">
+        <div class="container">
+            <h2><span style="color: #f39c12;">H</span>ello, I'm <span style="color: #f39c12;">A</span>lex</h2>
+            <p class="subtitle">Web Developer & Designer</p>
+            <p class="description">Welcome to my portfolio. I create amazing web experiences.</p>
+            <a href="RESUME.pdf" download="RESUME.pdf" class="btn btn--download">Download CV</a>
+        </div>
+    </section>
+
+    <section id="about" class="about fade-in">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate web developer with experience in creating responsive and user-friendly websites. I love turning ideas into reality through code.</p>
+                    <p>With a deep foundation in <span style="color: #f39c12;">HTML</span>, <span style="color: #f39c12;">CSS</span> and <span style="color: #f39c12;">JavaScript</span>, I specialize in transforming complex ideas into intuitive, high-performance web experiences. My goal is always to build interfaces that are both beautiful and functional.</p>
+                </div>
+                <div class="about-image">
+                    <img src="alex.jpg" alt="Profile Picture" class="round-image">
+                </div>
+                <a href="mailto:alex@example.com" class="btn hire-btn">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills fade-in">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-wrapper">
+                <button class="slider-btn prev-btn" onclick="scrollSkills(-1)">&#10094;</button>
+                <div class="skills-slider">
+                    <div class="skills-container">
+                        <div class="skill">
+                            <i class="fab fa-html5"></i>
+                            <h3>HTML5</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-css3-alt"></i>
+                            <h3>CSS3</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-js-square"></i>
+                            <h3>JavaScript</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-react"></i>
+                            <h3>React</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-node-js"></i>
+                            <h3>Node.js</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-python"></i>
+                            <h3>Python</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn next-btn" onclick="scrollSkills(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects fade-in">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80" alt="Modern SaaS dashboard" class="project-image">
+                    <div class="project-content">
+                        <h3>Interactive Dashboard</h3>
+                        <p>A clean, responsive admin dashboard with smooth animations and intuitive data visualizations for modern web apps.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Creative portfolio layout" class="project-image">
+                    <div class="project-content">
+                        <h3>Creative Portfolio</h3>
+                        <p>An elegant portfolio website with bold visuals and a mobile-first layout designed to highlight design work and case studies.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Responsive online store" class="project-image">
+                    <div class="project-content">
+                        <h3>Responsive Storefront</h3>
+                        <p>A polished e-commerce landing page with product highlights, call-to-action buttons, and a seamless checkout flow.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Weather app interface" class="project-image">
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>An interactive weather app with real-time data, location-based forecasts, and beautiful visualizations.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Task management tool" class="project-image">
+                    <div class="project-content">
+                        <h3>Task Manager</h3>
+                        <p>A productivity app for organizing tasks, setting reminders, and tracking progress with drag-and-drop functionality.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials fade-in">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"Amazing work! Highly recommend for any web development project."</p>
+                    <cite>- James Collins, manager Techprom</cite>
+                    <p><strong>Phone:</strong> <a href="tel:+254 118 018 851">+254 118 018 851</a></p>
+                </div>
+                <div class="testimonial">
+                    <p>"Professional, timely, and creative. Exceeded all expectations."</p>
+                    <cite>- Leon, Designer</cite>
+                    <p><strong>Phone:</strong> <a href="tel:+254 708 097 490">+254 708 097 490</a></p>
+                </div>
+                <div class="testimonial">
+                    <p>"Great communication and top-notch skills. Will work with again."</p>
+                    <cite>- Micheal Cyrus, Entrepreneur</cite>
+                    <p><strong>Phone:</strong> <a href="tel:+254 711 953 392">+254 711 953 392</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form" class="contact-form fade-in">
+        <div class="container">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g., +254 123 456 789" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact fade-in">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><strong>Email:</strong> <a href="mailto:ndungualex006@gmail.com">ndungualex006@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p><strong>Phone:</strong> <a href="tel:+254 794 006 698">+254 794 006 698</a></p>
+                </div>
+            </div>
+            <p>Get in touch with me through my social media channels.</p>
+            <div class="social-links">
+                <a href="https://github.com/Alekie006" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/alex-ndungu98" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/alek._ie?igsh=MWV5MmRyaDBiY216ZA==" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/+254794006698" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Alex's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollSkills(direction) {
+            const container = document.querySelector('.skills-container');
+            const skillWidth = document.querySelector('.skill').offsetWidth + 32; // 32 for gap/margin
+            const scrollAmount = skillWidth * 2;
+            container.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        // Mobile nav toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const navItems = document.querySelectorAll('.nav-links a');
+
+            navToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+
+            // Close nav when a link is clicked
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    navToggle.classList.remove('active');
+                });
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
